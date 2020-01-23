@@ -1,0 +1,55 @@
+.toggle-wrap {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 19px;
+  margin-top: 2.6rem;
+}
+
+.toggle-wrap input {display:none;}
+
+.toggle-el {
+  position: relative;
+  cursor: pointer;
+  border-radius: 34px;
+  height: 100%;
+  width: 100%;
+  background-color: #8c8c8c;
+  transition: .4s;
+  text-align: right;
+}
+
+.text {
+  font-size: 12px;
+  margin: 0 5px;
+}
+.toggle-el:before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  height: 13px;
+  width: 13px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  transition: .25s;
+}
+
+input:checked + .toggle-el {
+  background-color: #8c8c8c;
+  text-align: left;
+}
+
+input:focus + .toggle-el {
+  box-shadow: 0 0 1px white;
+}
+
+input:checked + .toggle-el:before {
+  transform: translateX(20px);
+}
+
+@media (max-width: 1024px) {
+  .toggle-wrap{
+    display: none;
+  }
+}

@@ -1,0 +1,11 @@
+.footer{
+    background: #2b2727;
+    height: 80px;
+}
+.footer-btns{
+
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+
+}
