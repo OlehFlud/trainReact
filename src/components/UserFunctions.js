@@ -26,18 +26,3 @@ export const login = user => {
             console.log(err)
         })
 };
-
-export const edit = user => {
-    return axios
-        .post('user/editUser', {
-            id: user.id,
-            email: user.email,
-            password: user.password
-        })
-        .then(response => {
-            return response.data
-        })
-        .catch(err => {
-            console.log(err)
-        })
-};
